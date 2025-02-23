@@ -1,0 +1,102 @@
+.compose-note{
+    min-height: 100vh;
+}
+.compose-note h2{
+    color: #E64833;
+    font-size: 30px;
+} 
+.compose-note select{
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    outline: none;
+}
+.compose-note input::file-selector-button{
+    padding: 6px 10px;
+    background-color: #90AEAD;
+    color: #F4ECE1;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    transition: background-color 0.5s ease;
+}
+.compose-note input::file-selector-button:hover{
+    background-color: #244855;  
+}
+.compose-note label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+.compose-note input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+.compose-note textarea{
+    background-color: #feff9c !important;
+    width: 100%;
+    padding: 20px;
+    border:none;
+    box-sizing: border-box;
+    outline: none;
+    resize: vertical;
+    height: 150px;
+}
+.compose-note input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #e4e3e3;
+}
+.compose-note #add-email-btn {
+    background-color: #90AEAD;
+    color: #F4ECE1;
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 100px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+.compose-note #add-email-btn:hover {
+   background-color: #244855;
+}
+.compose-note .send-btn{
+    background-color: #E64833;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+.compose-note .send-btn:hover{
+    background-color: #CC7661;
+    color: #F4ECE1;
+}
+.compose-note .email-inputs-container {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.compose-note .input-note {
+    margin-bottom: 20px;
+}
+.compose-note input:focus,
+.compose-note textarea:focus,
+.compose-note select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+input#file.form-control-file {
+    width: 210px;
+}

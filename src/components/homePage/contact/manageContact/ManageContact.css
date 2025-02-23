@@ -1,0 +1,40 @@
+.manage-contact {
+    min-height: 100vh;
+}
+.add-contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+#add-btn {
+    background-color: #E64833;
+    color: white;
+}
+#add-btn button:hover {
+    background-color: #CC7661;
+}
+.manage-contact td {
+    text-align: left;
+}
+.add-contact label {
+    color: #555;
+}
+.add-contact .form-control {
+    border-radius: 4px;
+}
+.manage-contact table{
+    padding-left: 10%;
+}
+.manage-contact table th {
+    color: #244855;
+}
+.manage-contact tbody button {
+    width: 40px;
+    padding: 5px;
+}
+.manage-contact tbody img {
+    vertical-align: middle;
+}
+.manage-contact input:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}

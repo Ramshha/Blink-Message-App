@@ -1,0 +1,67 @@
+.share-note {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+}
+.share-note h3{
+  color: #E64833;
+}
+.share-note .copy-btn{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.share-note button {
+  margin: 0 10px;
+}
+.share-note .close-btn {
+  background-color: #E64833;
+  color: #F4ECE1;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+  transition: background-color 0.5s ease;
+}
+.share-note .close-btn:hover {
+  background-color: #CC7661;
+}
+.share-note .share-btn {
+  background-color: #244855;
+  color: #F4ECE1;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 9px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+.share-note .share-btn:hover {
+  background-color: #90AEAD;
+}
+dialog:-internal-dialog-in-top-layer::backdrop {
+  position: fixed;
+   inset: 0px;
+   background: rgb(14 11 10 / 72%) !important;
+}
+#comment{
+  font-weight: lighter;
+  color: #CC7661;
+  text-align: center;
+}
+.share-note tr th{
+  background-color: #90AEAD;
+  color: #F4ECE1;
+  padding: 10px;
+  font-size: 16px;
+}
+.share-note tr:nth-child(even) td{
+  background-color: #F9F9F9;
+}
+.share-note tr:hover td{
+  background-color: #f1f1f1;
+}

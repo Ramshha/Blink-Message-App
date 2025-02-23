@@ -1,0 +1,46 @@
+.auth-page {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+.auth-container {
+    height: 90vh;
+}
+.auth-container input:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+.auth-box {
+    background-color: white;
+    box-shadow: 0 0 10px 10px #90AEAD;
+    border-radius: 10px;
+}
+.auth-box h1 {
+    color: #E64833;
+    font-size: 30px;
+}
+.auth-box input {
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.auth-box label {
+    color: #244855;
+}
+.auth-box button {
+    background-color: #90AEAD;
+    color: #F4ECE1;
+    text-decoration: none;
+    width: 100px;
+    transition: background-color 0.5s ease;
+}
+.auth-box button:hover {
+    background-color: #244855;
+    color: #F4ECE1;
+}
+.auth-box a {
+    text-decoration: none;
+}
+.register{
+    padding: 0 65px;
+}

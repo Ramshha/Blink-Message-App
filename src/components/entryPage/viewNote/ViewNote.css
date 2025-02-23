@@ -1,0 +1,170 @@
+.view-note{
+    min-height: 100vh;
+}
+.view-note #view-btn{
+    background-color: #E64833;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+.view-note #file-btn{
+    background-color: #E64833;
+    border: none;
+    outline: none;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.5s ease;
+}
+.view-note a,
+.view-note a:hover
+{
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+.view-note #view-btn:hover,
+.view-note #file-btn:hover
+{
+    background-color: #CC7661;
+}
+.view-note h2{
+    color: #E64833;
+    font-size: 30px;
+}
+.view-note input:focus{
+    box-shadow: none;
+}
+/* Burn Animation */
+@keyframes burn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: brightness(1) hue-rotate(0deg);
+    }
+    25% {
+        filter: brightness(1.5) hue-rotate(-30deg);
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+        filter: brightness(1) hue-rotate(60deg);
+    }
+    75% {
+        filter: brightness(1.5) hue-rotate(-90deg);
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0;
+        filter: brightness(0.5) hue-rotate(180deg);
+    }
+}
+
+
+.burn-animation {
+    animation: burn 4s ease-in-out forwards !important;
+    background: url('../viewNote/flame.PNG') !important;
+    background-size: cover !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.9) !important;
+}
+
+
+/* Container for the shred effect */
+.shred-animation {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace; /* Ensures equal-width characters for better shredding effect */
+}
+
+/* Each piece of the shredded text */
+.shred-piece {
+    display: inline-block;
+    position: relative;
+    width: 1ch; /* Width of one character */
+    height: 100%;
+    animation: shredPieceGo 2.5s forwards;
+    animation-delay: calc(var(--i) * 0.1s); /* Delay each piece to shred one by one */
+    transform-origin: top center;
+    background: #fff;
+    color: #000;
+}
+
+/* Shredding animation */
+@keyframes shredPieceGo {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50px) rotate(10deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(150px) rotate(-20deg);
+        opacity: 0;
+        color: transparent;
+    }
+}
+
+/* Example background gradient for the pieces */
+.shred-piece:nth-child(odd) {
+    background: linear-gradient(135deg, #f0f0f0 0%, #dcdcdc 50%, #c7c7c7 100%);
+}
+
+.shred-piece:nth-child(even) {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #cccccc 100%);
+}
+
+/* Additional styles to make the effect more realistic */
+#note {
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 10;
+}
+
+/* Disappear Animation */
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        filter: blur(0) brightness(1) hue-rotate(0deg) saturate(1);
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        opacity: 0.8;
+        filter: blur(2px) brightness(1.2) hue-rotate(60deg) saturate(1.2);
+        transform: scale(1.05) rotate(10deg);
+    }
+    50% {
+        opacity: 0.5;
+        filter: blur(4px) brightness(1.4) hue-rotate(120deg) saturate(1.4);
+        transform: scale(1.1) rotate(-10deg);
+    }
+    75% {
+        opacity: 0.3;
+        filter: blur(6px) brightness(0.8) hue-rotate(160deg) saturate(1.6);
+        transform: scale(1.2) rotate(20deg);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(10px) brightness(0.5) hue-rotate(240deg) saturate(0.5);
+        transform: scale(1.3) rotate(-30deg);
+    }
+}
+
+.disappear-animation {
+    animation: disappear 2.5s ease-in-out forwards;
+    background: inherit; /* Ensures the background matches the note content */
+    display: inline-block;
+    transform-origin: center center; /* Makes scaling and rotation smoother */
+}
+
+

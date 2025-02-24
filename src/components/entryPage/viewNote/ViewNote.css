@@ -68,7 +68,7 @@
 
 .burn-animation {
     animation: burn 4s ease-in-out forwards !important;
-    background: url('../viewNote/flame.PNG') !important;
+    background: url('../../../images/flame.png') !important;
     background-size: cover !important;
     border-radius: 10px !important;
     box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.9) !important;

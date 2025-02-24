@@ -1,5 +1,5 @@
 import React from 'react'
-import Notification from '../notification/Notification';
+import Notification from '../Notification/Notification';
 import { Link, useLocation} from 'react-router-dom';
 import Signout from '../../entryPage/authentication/Signout';
 import './NavBar.css'
